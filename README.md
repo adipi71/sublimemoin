@@ -8,7 +8,7 @@ Sublime Text Syntax Highlighting for MoinMoin wiki dialect
 
 
 # Installation
-Uncompress file in your SUBLIME_CONFIG_DIR/sublime-text-2/Packages/ directory
+Put Moin directory in your SUBLIME_CONFIG_DIR/sublime-text-2/Packages/ directory
 
 
   
