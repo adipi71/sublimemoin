@@ -1,0 +1,64 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Moin
+scopeName: source.moin
+fileTypes: [moin]
+uuid: 78ed4c60-cb2f-4cd7-8d13-1632eab179aa
+
+patterns:
+- comment: Headers
+  name: invalid.heading.moin  
+  match: ^=.+=
+  #markup.raw.block #invalid
+
+- comment: Bold
+  name: keyword1.boldall.moin
+  match: \'{3}(.+)\'{3}
+  captures:
+    '1': {name: keyword.bold.moin}
+
+- comment: italic
+  name: keyword1.italic.moin
+  match: \'{2}(.+)\'{2}[^']?
+  captures:
+    '1': {name: keyword.italic.moin}
+
+- comment: underscore
+  name: keyword1.underline.moin
+  match: \_{2}(.+)\_{2}
+  captures:
+    '1': {name: keyword.underline.moin}
+
+- comment: Unordered Lists
+  name: comment.unordered.moin
+  match: \s\*\s
+
+- comment: ordered Lists
+  name: keyword.ordered.moin
+  match: \s[1aAiI]\.\s
+
+- comment: Links
+  name: support.function.link.moin #comment.link.moin
+  match: \[\[([^\|\]]+)
+  captures:
+    '1': {name: comment.link.moin}
+
+- comment: Links
+  name: support.function.image.moin #comment.link.moin
+  match: \{\{([^}]+)\}\}
+  captures:
+    '1': {name: comment.link.moin}
+
+- comment: Links
+  name: keyword.moin
+  match: \|([^\|\]]+)
+  captures:       
+     '1': {name: support.function.linkname.moin} #'1': {name: entity.name.class.linkname.moin}
+
+- comment: Links
+  name: support.function.moin
+  match: (\{{2}|\}{2}|\[{2}|\]{2}|\||\{{3}|\}{3})
+
+#entity.name.class  
+
+...

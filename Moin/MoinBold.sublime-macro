@@ -1,0 +1,9 @@
+[
+	{
+		"args":
+		{
+			"contents": "'''${0:$SELECTION}'''"
+		},
+		"command": "insert_snippet"
+	}
+]
