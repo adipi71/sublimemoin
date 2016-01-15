@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<<TableOfContents>>
+]]></content>
+	<tabTrigger>toc</tabTrigger>
+	<scope>source.moin</scope>
+</snippet>
