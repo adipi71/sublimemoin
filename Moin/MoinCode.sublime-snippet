@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-{{{${0:#!highlight sh java html javascript sql}
-
-]]></content>
-	<tabTrigger>{{{</tabTrigger>
-	<scope>source.moin</scope>
-</snippet>
